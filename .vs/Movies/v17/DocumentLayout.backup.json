@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E946CCCF-41AC-40FF-A550-8B09831B387D}|Movies\\Movies.csproj|c:\\users\\vishw\\onedrive - lambton college\\c# .net\\term 3\\assignment 1\\movies\\movies\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E946CCCF-41AC-40FF-A550-8B09831B387D}|Movies\\Movies.csproj|solutionrelative:movies\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E946CCCF-41AC-40FF-A550-8B09831B387D}|Movies\\Movies.csproj|c:\\users\\vishw\\onedrive - lambton college\\c# .net\\term 3\\assignment 1\\movies\\movies\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E946CCCF-41AC-40FF-A550-8B09831B387D}|Movies\\Movies.csproj|solutionrelative:movies\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E946CCCF-41AC-40FF-A550-8B09831B387D}|Movies\\Movies.csproj|c:\\users\\vishw\\onedrive - lambton college\\c# .net\\term 3\\assignment 1\\movies\\movies\\services\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E946CCCF-41AC-40FF-A550-8B09831B387D}|Movies\\Movies.csproj|solutionrelative:movies\\services\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E946CCCF-41AC-40FF-A550-8B09831B387D}|Movies\\Movies.csproj|c:\\users\\vishw\\onedrive - lambton college\\c# .net\\term 3\\assignment 1\\movies\\movies\\services\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E946CCCF-41AC-40FF-A550-8B09831B387D}|Movies\\Movies.csproj|solutionrelative:movies\\services\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\Movies\\appsettings.json",
+              "RelativeDocumentMoniker": "Movies\\appsettings.json",
+              "ToolTip": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\Movies\\appsettings.json",
+              "RelativeToolTip": "Movies\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T00:34:41.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\Movies\\Program.cs",
+              "RelativeDocumentMoniker": "Movies\\Program.cs",
+              "ToolTip": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\Movies\\Program.cs",
+              "RelativeToolTip": "Movies\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:34:39.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAuth.cs",
+              "DocumentMoniker": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\Movies\\Services\\IAuth.cs",
+              "RelativeDocumentMoniker": "Movies\\Services\\IAuth.cs",
+              "ToolTip": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\Movies\\Services\\IAuth.cs",
+              "RelativeToolTip": "Movies\\Services\\IAuth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:34:14.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\Movies\\Services\\Auth.cs",
+              "RelativeDocumentMoniker": "Movies\\Services\\Auth.cs",
+              "ToolTip": "C:\\Users\\vishw\\OneDrive - Lambton College\\C# .Net\\Term 3\\Assignment 1\\Movies\\Movies\\Services\\Auth.cs",
+              "RelativeToolTip": "Movies\\Services\\Auth.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwGoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:31:17.371Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

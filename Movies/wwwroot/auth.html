@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Movies API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .form-container {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: #0056b3;
+            }
+
+        .token {
+            background: #f8f9fa;
+            padding: 10px;
+            margin: 10px 0;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movies API Authentication</h1>
+
+    <!-- Registration form-->
+    <div class="form-container">
+        <h2>Register</h2>
+        <input type="text" id="regUsername" placeholder="Username">
+        <input type="password" id="regPassword" placeholder="Password">
+        <button onclick="register()">Register</button>
+    </div>
+
+    <!-- Login form-->
+    <div class="form-container">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Token-->
+    <div id="tokenSection" style="display: none;">
+        <h3>JWT Token</h3>
+        <div id="tokenDisplay" class="token"></div>
+        <button onclick="testProtectedAPI()">Test Protected API</button>
+        <div id="apiResult"></div>
+    </div>
+
+    <script>
+        let currentToken = '';
+
+        async function register() {
+            const username = document.getElementById('regUsername').value;
+            const password = document.getElementById('regPassword').value;
+
+            const response = await fetch('/api/auth/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password })
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                currentToken = result.token;
+                showToken(result);
+            } else {
+                alert('Error: ' + result.message);
+            }
+        }
+
+        async function login() {
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            const response = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password })
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                currentToken = result.token;
+                showToken(result);
+            } else {
+                alert('Error: ' + result.message);
+            }
+        }
+
+        function showToken(authResult) {
+            document.getElementById('tokenDisplay').textContent = authResult.token;
+            document.getElementById('tokenSection').style.display = 'block';
+        }
+
+        async function testProtectedAPI() {
+            const response = await fetch('/api/movieapi', {
+                headers: { 'Authorization': `Bearer ${currentToken}` }
+            });
+
+            const result = await response.json();
+            document.getElementById('apiResult').innerHTML =
+                `<pre>${JSON.stringify(result, null, 2)}</pre>`;
+        }
+    </script>
+</body>
+</html>
